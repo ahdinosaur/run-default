@@ -6,9 +6,37 @@ run command, with default args if none given
 npm install --save run-default
 ```
 
+## example
+
+the reason i wrote this module: when i run my [tape](https://www.npmjs.com/package/tape) tests, i either want to run a specific test (or tests), or i want to run all the tests.
+
+so, with this module my `npm test` script is:
+
+```json
+{
+  "scripts": {
+    "test": "run-default tape **/*.test.js --"
+  }
+}
+```
+
+then to run all the tests:
+
+```shell
+npm test
+````
+
+and to run a specific test:
+
+```shell
+npm test -- my-file.test.js
+````
+
 ## usage
 
-### `runDefault = require('run-default')`
+```shell
+run-default command ...defaultArgs -- ...args
+```
 
 ## license
 
