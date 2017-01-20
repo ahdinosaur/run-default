@@ -1,6 +1,6 @@
 {
   "name": "run-default",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "run command, with default args if none given",
   "main": "index.js",
   "bin": "bin.js",
